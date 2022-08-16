@@ -29,6 +29,7 @@ const Login = () => {
   const router = useRouter();
 
 const[Opensnack , setOpenSnack] =  React.useState(false)
+const [ShowPassword, setShowPassword] = React.useState(false);
 
 
   interface LogInDetails {
@@ -58,7 +59,8 @@ const[Opensnack , setOpenSnack] =  React.useState(false)
           email: log.Username,
           password: log.Password,
         }
-      );
+      )   
+
       localStorage.setItem("AuthToken", data.Authorization);
         console.log(data.Authorization);
       console.log(status);
@@ -94,7 +96,7 @@ const[Opensnack , setOpenSnack] =  React.useState(false)
         type="error"
         message="Please Enter correct Username or Password"
       />
-      
+      ;
       <Grid container spacing={2}>
         <Grid item sm={12}>
           <div>
@@ -185,17 +187,20 @@ const[Opensnack , setOpenSnack] =  React.useState(false)
                   </InputLabel>
                   <OutlinedInput
                     id="outlined-adornment-password"
-                    type="password"
+                    type={ShowPassword?"text":"password"}
                     onChange={onchangePassHandler}
                     endAdornment={
                       <InputAdornment position="end">
                         <IconButton
                           aria-label="toggle password visibility"
                           edge="end"
+                          onClick={()=>{
+                            setShowPassword(!ShowPassword)
+                          }}
                         >
                           <Image src={iconpassword} alt="login" />
-                        </IconButton>
-                      </InputAdornment>
+                        </IconButton >
+                      </InputAdornment >
                     }
                     label="Password"
                   />
