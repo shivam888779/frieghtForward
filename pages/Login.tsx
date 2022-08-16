@@ -14,14 +14,14 @@ import {
   Paper,
 } from "@mui/material";
 
-import logo from "../images/logo.svg";
-import loginimg from "../images/login.png";
-import iconuser from "../images/icon.svg";
-import iconpassword from "../images/passwordimg.svg";
+import logo from "../public/images/logo.svg";
+import loginimg from "../public/images/login.png";
+import iconuser from "../public/images/icon.svg";
+import iconpassword from "../public/images/passwordimg.svg";
 
 import Image from "next/image";
 import axios from "axios";
-import CustomizedSnackbars from "./SnackBar";
+import CustomizedSnackbars from "../shared/utils/SnackBar";
 
 const Login = () => {
 

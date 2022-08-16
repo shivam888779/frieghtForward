@@ -28,16 +28,16 @@ import * as React from "react";
 
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import logoicon from "../images/logoicon.png";
+import logoicon from "../public/images/logoicon.png";
 import Image from "next/image";
 import LogoutSharpIcon from "@mui/icons-material/LogoutSharp";
 import PersonAddAltTwoToneIcon from "@mui/icons-material/PersonAddAltTwoTone";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
-import EditBox from "./EditData";
+import EditBox from "../shared/utils/EditData";
 
 import axios from "axios";
-import CustomizedSnackbars from "./SnackBar";
+import CustomizedSnackbars from "../shared/utils/SnackBar";
 
 interface Additems {
   Category: number;
