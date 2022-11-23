@@ -14,7 +14,7 @@ import {
   Paper,
 } from "@mui/material";
 
-import logo from "../public/images/logo.svg";
+import logo from "../public/images/iconsec.png";
 import loginimg from "../public/images/login.png";
 import iconuser from "../public/images/icon.svg";
 import iconpassword from "../public/images/passwordimg.svg";
@@ -86,7 +86,7 @@ const [ShowPassword, setShowPassword] = React.useState(false);
     <Box
       height="100vh"
       sx={{
-        background: "#ffcdca",
+        background: "#97278a",
         height: "100vh",
       }}
     >
@@ -96,39 +96,23 @@ const [ShowPassword, setShowPassword] = React.useState(false);
         type="error"
         message="Please Enter correct Username or Password"
       />
-      ;
-      <Grid container spacing={2}>
-        <Grid item sm={12}>
-          <div>
-            <Toolbar
-              sx={{
-                marginLeft: "100px",
-                marginTop: "24px",
-              }}
-            >
-              <Image src={logo} alt="logo" />
-            </Toolbar>
-          </div>
-        </Grid>
-
-        <Grid item sm={8}>
-          <Toolbar sx={{ marginLeft :"200px" }}>
-            <Image
-              src={loginimg}
-              alt="login"
-             
-            />
-          </Toolbar>
-        </Grid>
+      
+      <Grid container spacing={2}
+      sx={{
+        display: "flex",
+         justifyContent: "center",
+         alignItems:"center"
+      }}
+      >
         <Grid item sm={4}>
           <div>
-            <Box>
+            <Box >
               <Paper
                 elevation={3}
                 sx={{
                   // marginLeft:"25px",
                   paddingLeft: "35px",
-                  marginTop: "70px",
+                  marginTop: "100px",
                   height: "418px",
                   width: "400px",
                   backgroundColor: "white",

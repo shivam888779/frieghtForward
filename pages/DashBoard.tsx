@@ -28,7 +28,7 @@ import * as React from "react";
 
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import logoicon from "../public/images/logoicon.png";
+import logoicon from "../public/images/iconsec.png";
 import Image from "next/image";
 import LogoutSharpIcon from "@mui/icons-material/LogoutSharp";
 import PersonAddAltTwoToneIcon from "@mui/icons-material/PersonAddAltTwoTone";
@@ -279,7 +279,7 @@ export default function Dashboard() {
         values={parseInt(value)}
       />
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static" style={{ background: "#F88A12" }}>
+        <AppBar position="static" style={{ background: "#60574e" }}>
           <Toolbar>
             <Image
               src={logoicon}
@@ -297,7 +297,7 @@ export default function Dashboard() {
                 color: "white",
               }}
             >
-              Dashboard
+              Frieght Forward
             </Typography>
             <Button variant="text">
               <PersonAddAltTwoToneIcon
@@ -489,7 +489,7 @@ export default function Dashboard() {
             <Tab
               // setValue()
               value="1"
-              label="Vegetable"
+              label="light Vehical"
               sx={{
                 border: "2px solid",
                 borderTopLeftRadius: "20px",
@@ -498,7 +498,7 @@ export default function Dashboard() {
             />
             <Tab
               value="2"
-              label="Fruits"
+              label="heavy Vehical"
               sx={{ border: "2px solid ", borderBottom: "4px solid" }}
             />
             <Tab
@@ -546,14 +546,14 @@ export default function Dashboard() {
                 Image
               </TableCell>
               <TableCell sx={{ border: "1px solid", textAlign: "center" }}>
-                Vegetable Name
+                Delivery Boy Name
               </TableCell>
-              <TableCell sx={{ border: "1px solid" }}>Base Qty</TableCell>
+              <TableCell sx={{ border: "1px solid" }}>Mobile No</TableCell>
               <TableCell sx={{ border: "1px solid", textAlign: "center" }}>
-                Prize (per base Qty)
+                Task Assign
               </TableCell>
               <TableCell sx={{ border: "1px solid", textAlign: "center" }}>
-                In Stock
+                In Working 
               </TableCell>
               <TableCell sx={{ border: "1px solid", textAlign: "center" }}>
                 edit
